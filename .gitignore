@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Log files
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+
+# IDE and editor folders
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
