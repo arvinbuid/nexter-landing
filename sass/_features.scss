@@ -1,6 +1,10 @@
 @use "base";
 
 .features {
-  background-color: base.$color-grey-light-2;
   grid-column: center-start / center-end;
+  margin: 15rem 0;
+
+  display: grid;
+  gap: 6rem;
+  grid-template-columns: repeat(3, 1fr);
 }
