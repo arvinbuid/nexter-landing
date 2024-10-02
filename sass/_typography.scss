@@ -7,6 +7,8 @@
 
 .heading-1 {
   @extend %heading;
+  font-size: 4rem;
+  color: base.$color-grey-light-1;
 }
 
 .heading-2 {
