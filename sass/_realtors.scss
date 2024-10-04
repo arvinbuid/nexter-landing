@@ -4,6 +4,11 @@
   background-color: base.$color-secondary;
   grid-column: col-start 7 / full-end;
 
+  // MEDIA QUERY
+  @media only screen and (max-width: base.$bp-md) {
+    grid-column: 1 / -1;
+  }
+
   display: grid;
   justify-content: center;
   align-content: center;
@@ -11,12 +16,27 @@
   justify-items: center;
   padding: 2rem;
 
+  // MEDIA QUERY
+  @media only screen and (max-width: base.$bp-md) {
+    padding: 4rem;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     column-gap: 1.5rem;
     row-gap: 5vh;
     align-items: center;
+
+    // MEDIA QUERY
+    @media only screen and (max-width: base.$bp-md) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    // MEDIA QUERY
+    @media only screen and (max-width: base.$bp-sm) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {
